@@ -1,5 +1,8 @@
 catalog:
-  vite-plus: ^0.2.0
+  vite-plus: 0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89
+  vitest: 4.1.10
+  '@vitest/coverage-v8': 4.1.10
 minimumReleaseAgeExclude:
   - '@oxlint/binding-android-arm-eabi'
   - '@oxlint/binding-android-arm64'
@@ -21,6 +24,45 @@ minimumReleaseAgeExclude:
   - '@oxlint/binding-win32-ia32-msvc'
   - '@oxlint/binding-win32-x64-msvc'
   - oxlint
+  - '@oxc-project/runtime@0.141.0'
+  - '@oxc-project/types@0.141.0'
+  - '@oxfmt/binding-android-arm-eabi@0.60.0'
+  - '@oxfmt/binding-android-arm64@0.60.0'
+  - '@oxfmt/binding-darwin-arm64@0.60.0'
+  - '@oxfmt/binding-darwin-x64@0.60.0'
+  - '@oxfmt/binding-freebsd-x64@0.60.0'
+  - '@oxfmt/binding-linux-arm-gnueabihf@0.60.0'
+  - '@oxfmt/binding-linux-arm-musleabihf@0.60.0'
+  - '@oxfmt/binding-linux-arm64-gnu@0.60.0'
+  - '@oxfmt/binding-linux-arm64-musl@0.60.0'
+  - '@oxfmt/binding-linux-ppc64-gnu@0.60.0'
+  - '@oxfmt/binding-linux-riscv64-gnu@0.60.0'
+  - '@oxfmt/binding-linux-riscv64-musl@0.60.0'
+  - '@oxfmt/binding-linux-s390x-gnu@0.60.0'
+  - '@oxfmt/binding-linux-x64-gnu@0.60.0'
+  - '@oxfmt/binding-linux-x64-musl@0.60.0'
+  - '@oxfmt/binding-openharmony-arm64@0.60.0'
+  - '@oxfmt/binding-win32-arm64-msvc@0.60.0'
+  - '@oxfmt/binding-win32-ia32-msvc@0.60.0'
+  - '@oxfmt/binding-win32-x64-msvc@0.60.0'
+  - '@oxlint-tsgolint/darwin-arm64@7.0.2001'
+  - '@oxlint-tsgolint/darwin-x64@7.0.2001'
+  - '@oxlint-tsgolint/linux-arm64@7.0.2001'
+  - '@oxlint-tsgolint/linux-x64@7.0.2001'
+  - '@oxlint-tsgolint/win32-arm64@7.0.2001'
+  - '@oxlint-tsgolint/win32-x64@7.0.2001'
+  - '@voidzero-dev/vite-plus-core@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89'
+  - oxfmt@0.60.0
+  - oxlint-tsgolint@7.0.2001
+  - vite-plus@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89
 peerDependencyRules:
   allowAny:
     - vite
@@ -29,3 +71,6 @@ peerDependencyRules:
     vite: '*'
     vitest: '*'
 verifyDepsBeforeRun: install
+overrides:
+  vite: 'catalog:'
+  vitest: 'catalog:'
