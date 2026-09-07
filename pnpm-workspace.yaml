@@ -1,5 +1,8 @@
 catalog:
-  vite-plus: ^0.3.0
+  vite-plus: 0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de
+  vitest: 4.1.11
+  '@vitest/coverage-v8': 4.1.11
 minimumReleaseAgeExclude:
   - '@oxlint/binding-android-arm-eabi'
   - '@oxlint/binding-android-arm64'
@@ -21,6 +24,16 @@ minimumReleaseAgeExclude:
   - '@oxlint/binding-win32-ia32-msvc'
   - '@oxlint/binding-win32-x64-msvc'
   - oxlint
+  - '@voidzero-dev/vite-plus-core@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de'
+  - vite-plus@0.0.0-commit.6d65e1780791e2b24b27cf7deb63f57a420e78de
 peerDependencyRules:
   allowAny:
     - vite
@@ -29,3 +42,6 @@ peerDependencyRules:
     vite: '*'
     vitest: '*'
 verifyDepsBeforeRun: install
+overrides:
+  vite@*: 'catalog:'
+  vitest@*: 'catalog:'
