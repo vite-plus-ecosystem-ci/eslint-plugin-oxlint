@@ -262,12 +262,8 @@ export default defineConfig({
       'src/generated/rules-by-category.ts',
       'src/generated/rules-by-scope.ts',
     ],
-    deps: {
-      neverBundle: ['eslint'],
-    },
-    dts: {
-      cjsReexport: true,
-    },
+    deps: { resolveDepSubpath: true, neverBundle: ['eslint'] },
+    dts: {},
     platform: 'node',
     format: ['cjs', 'esm'],
   },
