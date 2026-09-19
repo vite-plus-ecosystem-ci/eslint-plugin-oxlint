@@ -252,6 +252,10 @@ export default defineConfig({
     singleQuote: true,
   },
   test: {
+    // Vitest v4 compatibility: preserve mock call history.
+    // Remove after tests no longer rely on calls from setup or earlier tests.
+    // https://vitest.dev/guide/migration/#clearmocks-is-enabled-by-default
+    clearMocks: false,
     coverage: {
       include: ['src', 'scripts'],
     },
@@ -262,12 +266,8 @@ export default defineConfig({
       'src/generated/rules-by-category.ts',
       'src/generated/rules-by-scope.ts',
     ],
-    deps: {
-      neverBundle: ['eslint'],
-    },
-    dts: {
-      cjsReexport: true,
-    },
+    deps: { resolveDepSubpath: true, neverBundle: ['eslint'] },
+    dts: {},
     platform: 'node',
     format: ['cjs', 'esm'],
   },
