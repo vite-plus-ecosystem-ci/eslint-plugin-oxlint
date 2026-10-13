@@ -1,8 +1,8 @@
 catalog:
-  vite-plus: 1.1.0
-  vite: npm:@voidzero-dev/vite-plus-core@1.1.0
-  vitest: 5.0.3
-  '@vitest/coverage-v8': 5.0.3
+  vite-plus: 0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3
+  vitest: 5.0.4
+  '@vitest/coverage-v8': 5.0.4
 minimumReleaseAgeExclude:
   - '@oxlint/binding-android-arm-eabi'
   - '@oxlint/binding-android-arm64'
