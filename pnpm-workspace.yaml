@@ -4,6 +4,20 @@ catalog:
   vitest: 5.1.0
   '@vitest/coverage-v8': 5.1.0
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - '@oxc-project/*'
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - vitest
+  - '@vitest/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - '@oxlint/binding-android-arm-eabi'
   - '@oxlint/binding-android-arm64'
   - '@oxlint/binding-darwin-arm64'
